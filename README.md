@@ -29,3 +29,7 @@ Another parameter that we are checking for the model accuracy is the number of o
    ```
    parameters: BTreeMap<String, String>,
    ```
+
+## Potential for future work:
+Model loading time for candle is much lesser than pytorch. However, the inference time for running yolov3 in candle is greater. Our goal will be to try and find a way to somehow bring down the inference time in candle.
+Also, we would compare the performances of various models such as classification and segmentation. There are many ways of comparing performances in classification models such as accuracy, confusion matrix, F1 score, etc. In segmentation, IoU(intersection over union) can be used to compare performance. This way, we might get an overall view if candle is more efficient than pytorch or not.
