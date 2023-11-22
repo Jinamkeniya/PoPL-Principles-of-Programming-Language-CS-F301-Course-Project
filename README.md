@@ -1,6 +1,6 @@
 # PoPL-Principles-of-Programming-Language-CS-F301-Course-Project
 ## Title: Comparative study between Candle, a Rust based ML framework and PyTorch
-## Members : Ayush Ghatalia, Veer Shah, Jinam Keniya
+## Members : Ayush Ghatalia(2021A7PS2571G), Veer Shah(2021A7PS2535G), Jinam Keniya(2021A7PS1622G)
 
 ## Problem Statement
 We aim to test Candle (which is a machine learning framework in Rust) against Pytorch using a model of yolov3. 
