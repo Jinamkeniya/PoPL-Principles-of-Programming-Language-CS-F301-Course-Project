@@ -156,7 +156,7 @@ pub fn main() -> Result<()> {
     let darknet = darknet::parse_config(config)?;
     let model = darknet.build_model(vb)?;
     let duration1 = start1.elapsed();
-    println!("Time elapsed in loading model is: {:?}", duration1);
+    println!("Time that has elapsed in loading model is: {:?}", duration1);
 
 
     for image_name in args.images.iter() {
