@@ -14,7 +14,7 @@ Another parameter that we are checking for the model accuracy is the number of o
 
 
 
-PopL concepts in candle:
+## POPL concepts in candle:
 1. The use of structs ("Block", "Darknet", "Accumulator") provides clear ownership boundaries and encapsulation, preventing unintended access or modification of internal data
 2. The use of Result enum in most functions for error handling ensures that errors are explicitly handled, preventing unexpected failures that could lead to memory corruption. For example:
    ```
