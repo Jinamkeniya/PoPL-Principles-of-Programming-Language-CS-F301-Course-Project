@@ -15,7 +15,7 @@ Approximately
 PopL concepts in candle:
 1. The use of structs ("Block", "Darknet", "Accumulator") provides clear ownership boundaries and encapsulation, preventing unintended access or modification of internal data
 2. The use of Result enum in most functions for error handling ensures that errors are explicitly handled, preventing unexpected failures that could lead to memory corruption. For example:
-  ```
+   ```
    pub fn parse_config<T: AsRef<Path>>(path: T) -> Result<Darknet> 
    ```
 3. The use of clone() in certain places, such as when cloning parameters in the finish_block method, indicates a conscious decision to transfer ownership of data, preventing unintended shared mutable references. For example:
@@ -25,5 +25,5 @@ PopL concepts in candle:
 4. The use of self and &mut self in methods indicates ownership transfer or mutable borrowing, ensuring that ownership rules are followed.
 5. Immutable data structures, like BTreeMap for parameters, are used in a way that promotes immutability. This is a good practice for preventing unintended modifications.
    ```
-       parameters: BTreeMap<String, String>,
+   parameters: BTreeMap<String, String>,
    ```
