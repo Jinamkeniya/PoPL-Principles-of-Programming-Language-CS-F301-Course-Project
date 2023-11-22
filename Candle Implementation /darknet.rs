@@ -59,7 +59,8 @@ impl Accumulator {
             Some(block_type) => {
                 if block_type == "net" {
                     self.net.parameters = self.parameters.clone();
-                } else {
+                } 
+                else{
                     let block = Block {
                         block_type: block_type.to_string(),
                         parameters: self.parameters.clone(),
@@ -99,7 +100,7 @@ pub fn parse_config<T: AsRef<Path>>(path: T) -> Result<Darknet> {
                 key_value[1].trim().to_owned(),
             );
             if prev.is_some() {
-                candle::bail!("multiple value for key {}", line)
+                candle::bail!("multiple value for keys {}", line)
             }
         }
     }
