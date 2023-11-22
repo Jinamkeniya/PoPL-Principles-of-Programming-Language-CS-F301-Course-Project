@@ -8,10 +8,10 @@ We have utilised confidence scores to test accuracy.
 Another parameter that we are checking for the model accuracy is the number of objects both the models are detecting which we are comparing with what appears correct to the naked eye.
 
 ## Software Used
-candle-nn library
-candle-core library
-numpy library
-PyTorch library
+1) candle-nn library
+2) candle-core library
+3) numpy library
+4) PyTorch library
 
 
 
